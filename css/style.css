@@ -11,10 +11,15 @@ html{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: .4s ease-out all;
 }
 
 .header{
   width: 100%;
+}
+
+.main{
+  margin-bottom: 50px;
 }
 
 .wrapper{
@@ -23,8 +28,9 @@ html{
 }
 
 .hero-section{
+  box-sizing: border-box;
   padding: 41px 15px 71px;
-  height: 100vh;
+  height: 100svh;
   background: url(../images/bg.jpg) 50% 0% no-repeat;
   background-size: cover;
   max-height: 770px;
@@ -51,7 +57,7 @@ html{
 .hero-text{
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   color: #fff;
 }
@@ -123,11 +129,18 @@ html{
   margin-bottom: 118px;
 }
 
-.title{
+
+.section-title{
   position: relative;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.title::after{
+.section-title::after{
   content: '';
   position: absolute;
   width: 50px;
@@ -135,15 +148,6 @@ html{
   bottom: -9px;
   left: 47%;
   background-image: url(../images/Line.svg);
-}
-
-.section-title{
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .inner-content{
@@ -189,48 +193,180 @@ html{
 
 .tab-item{
   display: inline-block;
-  position: relative;
   width: 100%;
 }
 
-.tab-item:nth-child(1)::before{
-  content: '';
-  position: absolute;
+.tab-item:nth-child(1)
+a
+{
+  box-sizing: border-box;
+  display: block;
   width: 140px;
   height: 224px;
   top: 0;
   left: 0;
-  z-index: -1;
   background-image: url(../images/image1.jpg);
+  background-repeat: no-repeat;
 }
 
-.tab-item:nth-child(2)::before{
-  content: '';
-  position: absolute;
+.tab-item:nth-child(2)
+a
+{
+  box-sizing: border-box;
   width: 140px;
   height: 224px;
   top: 0;
   left: 0;
-  z-index: -1;
   background-image: url(../images/image2.jpg);
 }
 
-.tab-item:nth-child(3)::before{
-  content: '';
-  position: absolute;
+.tab-item:nth-child(3)
+a
+{
+  box-sizing: border-box; 
   width: 140px;
   height: 224px;
   top: 0;
   left: 0;
-  z-index: -1;
   background-image: url(../images/image3.jpg);
 }
 
 .tab-link{
+  padding-top: 15px;
+  padding-left: 14px;
+  padding-right: 33px;
   color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
   height: 100%;
-  display: table-caption;
+  display: block;
+}
+
+.services{
+  margin-bottom: 115px;
+}
+
+.services .title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.title .section-title{
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.title 
+.section-title::after{
+  left: 0;
+}
+
+.describtion{
+  display: inherit;
+  gap: 31px;
+}
+
+.section-desc{
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.7;
+  max-width: 394px;
+}
+
+.section-btn{
+  display: inline-block;
+  padding: 11px 29px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 13px;
+  line-height: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background-color: #00A4E5;
+}
+
+.section-btn:hover{
+  transition: .3s ease-in all;
+  color: #00A4E5;
+  background-color: #FFF;
+  box-shadow: inset 0px 0px 2px 1px rgba(0,164,229,1);
+}
+
+.tabs{
+  display: flex;
+  gap: 28px;
+}
+
+.services-tab{
+  box-sizing: border-box;
+  padding: 38px 23px;
+  border: 1px solid #E6E6E6;
+  max-width: 295px;
+}
+
+.services-tab .services-img{
+  display: block;
+  max-height: 75px;
+}
+
+.services-title{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 13px;
+  width: 98%;
+}
+
+.services-subtxt{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.pre-footer{
+  height: 499px;
+  background-image: url(../images/43cb5b04fc1cbc2392456c0c0cb836a7.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+}
+
+.pre-footer-title{
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 39%;
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+
+.pre-footer-c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pre-footer-c .section-btn{
+  padding: 11px 26px;
+}
+
+.newsletter{
+  background: #171819;
+}
+
+.footer-info{
+  background: #141A20;
+}
+
+.copyright{
+  background: #171819;
 }
