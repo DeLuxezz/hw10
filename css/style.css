@@ -7,6 +7,14 @@ html{
   scroll-behavior: smooth;
 }
 
+a{
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
 .body{
   padding: 0;
   margin: 0;
@@ -19,7 +27,7 @@ html{
 }
 
 .main{
-  margin-bottom: 50px;
+
 }
 
 .wrapper{
@@ -33,7 +41,6 @@ html{
   height: 100svh;
   background: url(../images/bg.jpg) 50% 0% no-repeat;
   background-size: cover;
-  max-height: 770px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,12 +368,175 @@ a
 
 .newsletter{
   background: #171819;
+  padding: 30px 0;
+}
+
+.new-signup{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-txt{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 70px;
+  letter-spacing: 0.84px;
+}
+
+.signup-email{
+  display: flex;
+}
+
+.signup-email .section-btn{
+  min-width: 150px;
+  display: block;
+  width: fit-content;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.signup-mail{
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  width: 250px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 11px 16px;
+}
+
+.signup-mail::placeholder{
+  color: #48555B;
+}
+
+.footer-text{
+  margin: 0;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.84px;
+}
+
+.footerflex{
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-info{
   background: #141A20;
+  padding: 40px 0;
+}
+
+.company-info{
+  width: 27%;
+}
+
+.info-title{
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.footer-logo{
+  text-decoration: none;
+  display: block;
+  margin: auto 0;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.info-links .info-title,
+.info-contact .info-title{
+  margin-bottom: 15px;
+}
+
+.info-img{
+  display: block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+.info-subtext{
+  line-height: 1.7;
+}
+
+.info-links{
+
+}
+
+.footer-links{
+  display: flex;
+  gap: 34px;
+}
+
+.footer-link-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link-list-item .footer-text{
+  font-weight: 600;
+  line-height: 2.3;
+  text-transform: uppercase;
+}
+
+.info-contact{
+  width: 13%;
+}
+
+.contact-links{
+
+}
+
+.contact-address{
+  width: 93%;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.footer-link{
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: rgba(22, 172, 232, 0.5);
+  text-decoration: underline;
+}
+
+.contact-tel{
+  margin-bottom: 15px;
+}
+
+.contact-mail{
+
+}
+
+.info-social{
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+}
+
+.social-link{
+  height: fit-content;
 }
 
 .copyright{
+  padding: 22px 0;
   background: #171819;
+}
+
+.copyright-info{
+  text-align: center;
 }
